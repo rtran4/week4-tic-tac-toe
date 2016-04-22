@@ -16,21 +16,21 @@ def printBoard(board):
 
 def checkWinner(board, player):    
     print('Checking if ' + player + ' is a winner...')
-    if board['top-L'] == board['top-M'] == board['top-R'] == player:
+    if board['top-L'] == player and board['top-M'] == player and board['top-R'] == player:
         return True
-    elif board['mid-L'] == board['mid-M'] == board['mid-R'] == player:
+    elif board['mid-L'] == player and board['mid-M'] == player and board['mid-R'] == player:
         return True
-    elif board['low-L'] == board['low-M'] == board['low-R'] == player:
+    elif board['low-L'] == player and board['low-M'] == player and board['low-R'] == player:
         return True
-    elif board['top-L'] == board['mid-L'] == board['low-L'] == player:
+    elif board['top-L'] == player and board['mid-L'] == player and board['low-L'] == player:
         return True
-    elif board['top-M'] == board['mid-M'] == board['low-M'] == player:
+    elif board['top-M'] == player and board['mid-M'] == player and board['low-M'] == player:
         return True
-    elif board['top-R'] == board['mid-R'] == board['low-R'] == player:
+    elif board['top-R'] == player and board['mid-R'] == player and board['low-R'] == player:
         return True
-    elif board['top-L'] == board['mid-M'] == board['low-L'] == player:
+    elif board['top-L'] == player and board['mid-M'] == player and board['low-L'] == player:
         return True
-    elif board['top-R'] == board['mid-M'] == board['low-L'] == player:
+    elif board['top-R'] == player and board['mid-M'] == player and board['low-L'] == player:
         return True
     else:
         return False
